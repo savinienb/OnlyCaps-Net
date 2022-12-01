@@ -7,7 +7,7 @@ OnlyCaps-Net is a 3D capsule-only semantic segmentation network for medical imag
 In this paper we introduce two novel squashing functions (UnitSquash and Softsquash), Unit routing, a novel parameters-free and iteration-free routing algorithm, and a parameters efficient convolutional capsule, i.e Depthwise Convolutional Capsule.
 Modifying a 3D-UCaps, using our depthwise convolutional capsule with unit squashing and unit routing, leads to a ∼29% time speed up with a ∼35% memory footprint reduction.
 
-![alt text](imgs/img.png "Convolutional Capsule vs Depthwise Convolutional Capsule")
+![alt text](imgs/im.png "Convolutional Capsule vs Depthwise Convolutional Capsule")
 
 Details and comparison between OnlyCaps and 3D-UCaps model architecture and experimental results can be found in our paper:
 ```
@@ -105,7 +105,7 @@ The full list of arguments can be shown through the command:
 python evaluate.py -h
 ```
 
-We provide bash script with our config to validate trained UCaps models on all datasets, you just need to download our models in [Model Zoo](#model-zoo) and put them in `logs` folder. After that, you can run the evaluation script for targeted dataset as follow:
+We provide bash script with our config to validate trained OnlyCaps-Net/UCaps models on all datasets, you just need to download our models in [Model Zoo](#model-zoo) and put them in `logs` folder. After that, you can run the evaluation script for targeted dataset as follow:
 ```
 bash scripts/evaluate_ucaps_iseg.sh
 ```
